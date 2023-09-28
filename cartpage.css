@@ -1,0 +1,169 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header {
+	background-color: #333;
+	color: white;
+	padding: 6px;
+	font-size: medium;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+nav li {
+	float: left;
+}
+
+nav li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	
+}
+
+nav li a:hover {
+	background-color: #111;
+}
+
+/* 
+  main {
+	  padding: 20px;
+	  display: flex;
+	  flex-wrap: wrap;
+  } */
+.menu {
+	display: inline-block;
+	background-color: #fff;
+	font-size: 16px;
+}
+
+.menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.menu li {
+	position: relative;
+	display: inline-block;
+	padding: 12px 20px;
+}
+
+.menu li:hover {
+	background-color: #f1f1f1;
+}
+
+.menu a {
+	color: #333;
+	text-decoration: none;
+}
+
+.menu ul ul {
+	position: absolute;
+	left: 0;
+	top: 100%;
+	display: none;
+	background-color: #fff;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.menu ul ul li {
+	z-index: 9999;
+	display: block;
+	background-color: #fff;
+	width: 200px;
+	padding: 10px;
+	white-space: nowrap;
+}
+
+.menu ul ul li:hover {
+	background-color: #f1f1f1;
+}
+
+.menu ul ul a {
+	color: #333;
+}
+
+.menu li:hover>ul {
+	display: block;
+}
+
+
+
+
+
+
+
+
+body {
+	font-family: Arial, sans-serif;
+}
+
+.cart {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.h2 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#h1 {
+	margin-bottom: 20px;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 20px;
+}
+
+th {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	text-align: left;
+}
+
+td {
+	padding: 10px;
+	border: 1px solid #ddd;
+}
+
+.total {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+button {
+	background-color: #f44336;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+	table {
+		font-size: 12px;
+	}
+
+	td,
+	th {
+		padding: 5px;
+	}
+}

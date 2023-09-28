@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Shop</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+    <style>
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+}
+
+header {
+	background-color: #2874f0;
+	color: #fff;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
+
+.logo {
+	flex: 1;
+	font-size: 32px;
+	font-weight: bold;
+}
+
+.logo a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.search-box {
+	flex: 4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.search-box input[type="text"] {
+	width: 70%;
+	padding: 10px;
+	font-size: 16px;
+	border: none;
+	border-radius: 5px 0 0 5px;
+}
+
+.search-box button[type="submit"] {
+	padding: 10px 20px;
+	background-color: #ffb400;
+	color: #fff;
+	font-size: 16px;
+	border: none;
+	border-radius: 0 5px 5px 0;
+	cursor: pointer;
+}
+
+.cart {
+	flex: 1;
+	text-align: center;
+}
+
+.cart a {
+	color: #fff;
+	text-decoration: none;
+	position: relative;
+}
+
+.cart-icon {
+	font-size: 24px;
+}
+
+.cart-count {
+	background-color: #ffb400;
+	color: #fff;
+	display: inline-block;
+	font-size: 12px;
+	padding: 2px 5px;
+	border-radius: 50%;
+	position: absolute;
+	top: -10px;
+	right: -10px;
+}
+
+nav {
+	flex: 6;
+	text-align: right;
+	display: none;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+}
+
+
+	
+
+    </style>
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<a href="#">My Shop</a>
+		</div>
+		<div class="search-box">
+			<input type="text" placeholder="Search products...">
+			<button type="submit">Search</button>
+		</div>
+		<div class="cart">
+			<a href="#">
+				<span class="cart-icon">&#128722;</span>
+				<span class="cart-count">0</span>
+			</a>
+		</div>
+		<button type="button" class="menu-icon">&#9776;</button>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Products</a></li>
+				<li><a href="#">Contact Us</a></li>
+				<li><a href="#">About Us</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<!-- Main content goes here -->
+	</main>
+
+	<footer>
+		<p>&copy; 2023 My Shop. All rights reserved.</p>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+</html>

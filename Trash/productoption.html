@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Shop</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+    * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	color: #333;
+	background-color: #f2f2f2;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #fff;
+	padding: 20px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;
+}
+
+.logo a {
+	font-size: 24px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #333;
+}
+
+.search-box {
+	display: flex;
+	align-items: center;
+	background-color: #f2f2f2;
+	border-radius: 5px;
+	overflow: hidden;
+	margin: 0 20px;
+}
+
+.search-box input[type="text"] {
+	flex: 1;
+	padding: 10px;
+	border: none;
+}
+
+.search-box button[type="submit"] {
+	padding: 10px;
+	background-color: #333;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+}
+
+.cart a {
+	position: relative;
+	display: flex;
+	align-items: center;
+	color: #333;
+	text-decoration: none;
+}
+
+.cart a:hover {
+	color: #007bff;
+}
+
+.cart-icon {
+	font-size: 24px;
+	margin-right: 5px;
+}
+
+.cart-count {
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	background-color: #007bff;
+	color: #fff;
+	font-size: 12px;
+	padding: 5px;
+	border-radius: 50%;
+}
+
+.menu-icon {
+	display: none;
+	background-color: #333;
+	color: #fff;
+	border: none;
+	padding: 10px;
+	cursor: pointer;
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+}
+
+nav ul li {
+	position: relative;
+	margin-right: 20px;
+}
+
+nav ul li a {
+	display: block;
+	padding: 10px;
+	color: #333;
+	text-decoration: none;
+}
+
+nav ul li a:hover {
+	color: #007bff;
+}
+
+nav ul li ul {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	padding: 10px;
+	display: none;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	z-index: 99;
+}
+
+nav ul li:hover ul {
+	display: block;
+}
+
+nav ul li ul li {
+	position: relative;
+	margin-right: 0;
+}
+
+nav ul li ul li a {
+	padding: 5px;
+	color: #333;
+}
+
+nav ul li ul li a:hover {
+	color: #007bff;
+}
+
+@media screen and (max-width: 768px) {}
+	.search-box {
+		margin: 0;
+	}
+	
+	.cart {
+		margin-right: 20px;
+	}
+	
+	.menu-icon {
+		display: block;
+	}
+	
+	nav {
+		position: absolute;
+		top: 70px;
+		left: 0;
+		right: 0;
+		background-color: #fff;
+		padding: 10px;
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+		display: none;
+	}
+	
+	nav ul {
+		flex-direction: column;
+	
+    }
+    </style>
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<a href="#">My Shop</a>
+		</div>
+		<div class="search-box">
+			<input type="text" placeholder="Search products...">
+			<button type="submit">Search</button>
+		</div>
+		<div class="cart">
+			<a href="#">
+				<span class="cart-icon">&#128722;</span>
+				<span class="cart-count">0</span>
+			</a>
+		</div>
+		<button type="button" class="menu-icon">&#9776;</button>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li>
+					<a href="#">Products</a>
+					<ul>
+						<li><a href="#">Electronics</a></li>
+						<li>
+							<a href="#">Clothing</a>
+							<ul>
+								<li><a href="#">Men's Clothing</a></li>
+								<li>
+									<a href="#">Shirts</a>
+									<ul>
+										<li><a href="#">Casual Shirts</a></li>
+										<li><a href="#">Formal Shirts</a></li>
+										<li><a href="#">Printed Shirts</a></li>
+										<li><a href="#">Solid Shirts</a></li>
+									</ul>
+								</li>
+								<li><a href="#">T-shirts</a></li>
+								<li><a href="#">Polo Shirts</a></li>
+								<li><a href="#">Sweaters &amp; Sweatshirts</a></li>
+								<li><a href="#">Jackets &amp; Coats</a></li>
+								<li><a href="#">Jeans</a></li>
+								<li><a href="#">Pants</a></li>
+								<li><a href="#">Shorts</a></li>
+								<li><a href="#">Suits &amp; Blazers</a></li>
+								<li><a href="#">Underwear &amp; Socks</a></li>
+								<li><a href="#">Activewear</a></li>
+								<li><a href="#">Swimwear</a></li>
+								<li><a href="#">Sleepwear &amp; Loungewear</a></li>
+								<li>
+									<a href="#">Traditional &amp; Ethnic Wear</a>
+									<ul>
+										<li><a href="#">Kurtas &amp; Kurta Sets</a></li>
+										<li><a href="#">Sherwanis</a></li>
+										<li><a href="#">Dhotis &amp; Lungis</a></li>
+										<li><a href="#">Mundus &amp; Veshtis</a></li>
+										<li><a href="#">Ethnic Jackets</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li><a href="#">Beauty &amp; Personal Care</a></li>
+						<li><a href="#">Home &amp; Kitchen</a></li>
+						<li><a href="#">Sports &amp; Fitness</a></li>
